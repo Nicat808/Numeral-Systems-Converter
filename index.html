@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numeral system converter</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <h1>
+        <span id="header-from">Decimal</span> to
+        <span id="header-to">Binary</span> Converter
+      </h1>
+      <div class="container">
+        <header>
+          <div id="from-system" class="number-dropdown">
+            <span>Decimal</span>
+            <i class="fa-solid fa-chevron-down"></i>
+            <div class="available-systems hide"></div>
+          </div>
+          <div id="switch-systems"><i class="fa-solid fa-repeat"></i></div>
+          <div id="to-system" class="number-dropdown">
+            <span>Binary</span>
+            <i class="fa-solid fa-chevron-down"></i>
+            <div class="available-systems hide"></div>
+          </div>
+        </header>
+        <main>
+          <div class="result-box">
+            <label for="from" id="label-from">
+              <span>Decimal</span> number
+            </label>
+            <div class="result">
+              <input type="text" name="from" placeholder="Number..." />
+              <span id="from-number">10</span>
+            </div>
+          </div>
+          <div class="result-box">
+            <label for="to" id="label-to"> <span>Binary</span> number </label>
+            <div class="result">
+              <input type="text" name="to" placeholder="Result..." />
+              <span id="to-number">2</span>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
